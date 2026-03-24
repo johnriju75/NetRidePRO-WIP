@@ -6,39 +6,48 @@
     <title>NetRide Pro | Coming Soon</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* This hex (#09090b) is the exact background used in the newest Vercel/Next.js dark themes */
-        body {
-            background-color: #09090b; 
+        /* Exact HEX match for your Fintech theme */
+        :root {
+            --lime-neon: #ADFF2F;
         }
+        body {
+            background-color: #000000; /* Deep black for maximum neon contrast */
+        }
+        .text-lime-neon { color: var(--lime-neon); }
+        .bg-lime-neon { background-color: var(--lime-neon); }
+        .border-lime-neon { border-color: var(--lime-neon); }
+        .shadow-neon { box-shadow: 0 0 15px rgba(173, 255, 47, 0.3); }
     </style>
 </head>
-<body class="text-zinc-50 flex items-center justify-center min-h-screen font-sans antialiased">
-    <div class="text-center p-8 max-w-sm">
+<body class="text-zinc-100 flex items-center justify-center min-h-screen font-sans antialiased">
+    <div class="text-center p-8 max-w-sm border border-zinc-800 rounded-3xl bg-zinc-900/40 backdrop-blur-md shadow-neon">
         
-        <div class="mb-10">
-            <h1 class="text-4xl font-bold tracking-tighter text-white">
-                NetRide<span class="text-indigo-500">PRO</span>
+        <div class="mb-12">
+            <h1 class="text-4xl font-black tracking-tighter text-white">
+                NetRide<span class="text-lime-neon">PRO</span>
             </h1>
         </div>
 
-        <div class="space-y-3">
-            <p class="text-sm font-bold text-indigo-500 uppercase tracking-[0.3em]">
+        <div class="space-y-4">
+            <p class="text-[10px] font-black text-lime-neon uppercase tracking-[0.5em] pl-[0.5em]">
                 Launching SOON
             </p>
-            <div class="h-[1px] w-12 bg-zinc-800 mx-auto"></div>
-            <p class="text-zinc-400 text-sm font-light leading-relaxed">
-                Smart tracking for Australian rideshare drivers.
+            <p class="text-zinc-400 text-sm font-medium leading-relaxed">
+                Agentic accounting for the <br>Australian rideshare industry.
             </p>
         </div>
 
-        <div class="mt-12 flex items-center justify-center space-x-2 opacity-50">
+        <div class="mt-12 flex items-center justify-center space-x-3 py-2 px-4 rounded-full border border-zinc-800 w-fit mx-auto">
             <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-500 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"></span>
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-neon opacity-40"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-lime-neon"></span>
             </span>
-            <span class="text-[10px] font-medium text-zinc-500 uppercase tracking-widest">Systems Online</span>
+            <span class="text-[9px] font-bold text-zinc-500 uppercase tracking-widest">v1.0 Internal Alpha Live</span>
         </div>
 
+        <p class="mt-8 text-[9px] text-zinc-600 uppercase tracking-[0.2em]">
+            Brisbane &bull; Gold Coast &bull; Sunshine Coast
+        </p>
     </div>
 </body>
 </html>

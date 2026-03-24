@@ -5,19 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetRide Pro | Coming Soon</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Matches the background-gradient feel of your login app */
+        body {
+            background-color: #020617; /* Very deep slate/black */
+            background-image: radial-gradient(circle at top right, #1e1b4b 0%, transparent 40%), 
+                              radial-gradient(circle at bottom left, #0f172a 0%, transparent 40%);
+        }
+    </style>
 </head>
-<body class="bg-slate-900 text-white flex items-center justify-center min-h-screen">
-    <div class="text-center p-6">
-        <h1 class="text-6xl font-extrabold mb-2 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-            NetRide Pro
-        </h1>
-        <p class="text-2xl font-light text-slate-400 tracking-widest uppercase">
-            Launching SOON
-        </p>
-        <div class="mt-8 flex items-center justify-center space-x-2">
-            <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-ping"></span>
-            <span class="text-xs text-slate-500 uppercase tracking-tighter">System Initialized</span>
+<body class="text-slate-50 flex items-center justify-center min-h-screen">
+    <div class="text-center p-8 max-w-md w-full border border-slate-800 bg-slate-900/50 backdrop-blur-xl rounded-2xl shadow-2xl">
+        
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold tracking-tight text-white flex items-center justify-center gap-2">
+                <span class="bg-indigo-600 p-1.5 rounded-lg">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                </span>
+                NetRidePRO
+            </h1>
         </div>
+
+        <div class="space-y-4">
+            <h2 class="text-xl font-medium text-slate-200 uppercase tracking-widest">
+                Launching SOON
+            </h2>
+            <p class="text-slate-400 text-sm leading-relaxed">
+                Automated GST, BAS, and tax tracking built for Australian drivers.
+            </p>
+        </div>
+
+        <div class="mt-10 flex items-center justify-center space-x-3 bg-slate-950/50 py-2 px-4 rounded-full w-max mx-auto border border-slate-800">
+            <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+            </span>
+            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-tighter">Production Environment Online</span>
+        </div>
+
+        <p class="mt-12 text-[10px] text-slate-600 uppercase tracking-widest">
+            ATO Compliant &bull; GST Ready &bull; Brisbane HQ
+        </p>
     </div>
 </body>
 </html>
